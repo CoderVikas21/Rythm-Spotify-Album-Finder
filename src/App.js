@@ -6,6 +6,7 @@ import Sidediv from './components/Sidediv'
 import End from './components/End'
 import Error from './components/Error'
 import img from './images/home_img.png'
+import LoadingBar from 'react-top-loading-bar'
 
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -21,6 +22,7 @@ function App() {
   const [albums , setAlbums] = useState([])
   const [load,setLoad] = useState(false)
   const [error , setError] = useState(false)
+  const [progress , setProgress] = useState(0)
 
 
   useEffect(()=>{
@@ -34,9 +36,7 @@ function App() {
     fetch(url,auth).then(res => res.json()).then(data => setAc(data.access_token))
   },[])
 
-  // useEffect(()=>{
-  //   get()
-  // },[])
+
 
   function searchhandle(event){
     setser(event.target.value)
@@ -48,8 +48,10 @@ function App() {
   }
 
   async function get(){
+    setProgress(50)
     if(ser===""){
       toast.error("Please enter name of Artist")
+      setProgress(100)
       return
     }
     setLoad(true)
@@ -80,13 +82,20 @@ function App() {
       console.log(e)
       setAlbums([])
     }
-   
+    setProgress(100)
     setLoad(false)
   }
 
   
   return (
     <>
+    <LoadingBar
+        className='loadingbar'
+        color='red'
+        progress={progress}
+        shadow = "true"
+        onLoaderFinished={() => setProgress(0)}
+      />
    <div className='main_container'>
    <div className="homeimg">
    <img src= {img}/>

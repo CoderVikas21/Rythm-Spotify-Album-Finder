@@ -5,7 +5,10 @@ const Home = () => {
   return (
     <>
     <div className="home">
-        <p>Get Albums of 'ALL' Artists</p>
+        <div className='para'>
+          <p>Let's <i>vibe</i> together...</p>
+          <p>Get Albums of <i>ALL</i> Artists</p>
+        </div>
     </div>
     </>
     
