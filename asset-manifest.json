@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/CoderVikas21/static/css/main.f029a054.css",
+    "main.js": "/CoderVikas21/static/js/main.d23bc549.js",
+    "static/media/home_img.png": "/CoderVikas21/static/media/home_img.275cedc0ce7c2d74e3b6.png",
+    "static/media/img5.jpg": "/CoderVikas21/static/media/img5.dba77566d45a5c603818.jpg",
+    "static/media/img6.jpg": "/CoderVikas21/static/media/img6.8c15dee9f8590370b6a3.jpg",
+    "static/media/img4.jpg": "/CoderVikas21/static/media/img4.f9f3168946a097bd6375.jpg",
+    "static/media/img1.jpeg": "/CoderVikas21/static/media/img1.99ba65f28e097c504e43.jpeg",
+    "static/media/img7.webp": "/CoderVikas21/static/media/img7.2bc21b8fe4ee3a3ab84f.webp",
+    "static/media/img2.jpeg": "/CoderVikas21/static/media/img2.7ea9177812ea57273680.jpeg",
+    "static/media/img3.jpeg": "/CoderVikas21/static/media/img3.9595e7e60d580d692561.jpeg",
+    "index.html": "/CoderVikas21/index.html",
+    "main.f029a054.css.map": "/CoderVikas21/static/css/main.f029a054.css.map",
+    "main.d23bc549.js.map": "/CoderVikas21/static/js/main.d23bc549.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f029a054.css",
+    "static/js/main.d23bc549.js"
+  ]
+}
